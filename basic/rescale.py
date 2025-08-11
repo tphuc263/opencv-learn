@@ -1,6 +1,6 @@
 import cv2 as cv
 
-img = cv.imread('Photos/cat.jpg')
+img = cv.imread('../Photos/cat.jpg')
 cv.imshow('cat', img)
 
 def rescaleFrame(frame, scale=0.75):
@@ -16,7 +16,7 @@ def changeRes(width, height):
     capture.set(3, width)
     capture.set(4, height)
 
-capture = cv.VideoCapture('Videos/cat_video.mp4')
+capture = cv.VideoCapture('../Videos/cat_video.mp4')
 while True:
     isTrue, frame = capture.read()
     resize_frame = rescaleFrame(frame, scale=0.4)

@@ -1,12 +1,12 @@
 import cv2 as cv
 
 # # read images
-img = cv.imread('Photos/cat.jpg')
+img = cv.imread('../Photos/cat.jpg')
 cv.imshow('cat', img)
 cv.waitKey(0)
 
 # read videos
-capture = cv.VideoCapture('Videos/cat_video.mp4')
+capture = cv.VideoCapture('../Videos/cat_video.mp4')
 while True:
     isTrue, frame = capture.read()
     cv.imshow('cat see the sky', frame)
